@@ -1,6 +1,7 @@
 require 'rack'
+require 'pry'
 class MyServer
-    def call(evn)
+    def call(env)
         resp = Rack::Response.new
         resp.write 'Hello'
         resp.finish

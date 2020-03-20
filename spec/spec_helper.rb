@@ -1,9 +1,9 @@
-require_relative '../my_server.rb'
+require_relative '../application.rb'
 require 'rack'
 require 'rack/test'
 
 def app() 
-  MyServer.new
+  Application.new
 end
 
 RSpec.configure do |config|
